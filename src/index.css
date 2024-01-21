@@ -1,0 +1,87 @@
+/* Apply a background image to the entire body of the document. */
+body {
+  background-image:url(./concrete.jpg); /* The image used as a background. */
+  background-repeat: no-repeat; /* The background image will not repeat. */
+  background-attachment: fixed; /* The background image will not scroll with the page. */
+  background-size: cover; /* The background image will cover the entire area of the element. */
+}
+
+/* Styling for the introduction text of the application. */
+.intro {
+  text-align: center; /* The text is centered. */
+  color: #610564; /* The color of the text. */
+  font-size: 36px; /* The size of the text. */
+  padding: 24px; /* The padding around the text. */
+  margin-left: 21px; /* The margin to the left of the text. */
+  padding-right: 100px; /* The padding to the right of the text. */
+  padding-left: 100px; /* The padding to the left of the text. */
+}
+
+/* Styling for the container that holds the player cards. */
+.players {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; /* Adjust this based on your design preference */
+  gap: 16px;
+  margin: 16px;
+}
+
+
+/* Styling for individual player cards. */
+.player-card {
+  width: calc(33.33% - 16px); /* Calculate 33.33% of the container width and subtract the gap */
+  margin: 16px 0; /* Adjust the vertical margin as needed */
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/* Styling for when a user hovers over a player card. */
+.player-card:hover {
+  /* The card moves up 5 pixels when hovered over. */
+    transform: translateY(-5px);
+}
+
+/* Styling for the container that holds the player's image. */
+.player-image-container {
+  height: 200px; /* Adjust the height as needed */
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Styling for the player's image. */
+.player-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/*styling for Nav Bar. */
+.NavBar {
+  color: #802323;
+  display:flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 50%;
+  position:calc(50%);
+  display:flex; 
+  flex-direction: row;
+  list-style: none;
+  padding: 0 
+}
+
+/* Styling for the player's details (name, breed, status). */
+.player-details {
+  padding: 10px;
+  text-align: center;
+}
